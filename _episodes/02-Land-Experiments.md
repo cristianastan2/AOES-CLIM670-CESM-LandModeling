@@ -7,9 +7,9 @@ keypoints:
 - ""
 ---
 
-## 3 Experiments with Land Model
+# 3 Experiments with Land Model
 
-### Basic CLM5 Experiment
+## Basic CLM5 Experiment
 
 Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal resolution for 5-days
 
@@ -17,7 +17,7 @@ Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal reso
 
 `resolution:` f09_g17_gl4
 
-## Compset information
+> ### Compset information
 >
 > How can I find out what this compset means?
 >
@@ -44,6 +44,8 @@ Namelist changes:
 {: .challenge}
 
 Configuration changes:
+
+Reduce the wallclock time.
 
 ~~~
 ./xmlchange --subgroup case.run JOB_WALLCLOCK_TIME=0:15:00
