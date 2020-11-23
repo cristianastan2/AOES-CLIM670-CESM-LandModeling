@@ -9,7 +9,7 @@ keypoints:
 
 # 3 Experiments with Land Model
 
-## Basic CLM5 Experiment
+## Experiment 1: Basic CLM5 Experiment using Satellite Phenology
 
 Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal resolution for 5-days
 
@@ -60,7 +60,7 @@ Reduce the wallclock time.
 {: .challenge}
 
 
-## Understand Differences between Land Compsets
+## Experiment 2: Explore Differences between Land Compsets
 
 Run the same configuration as above, but with a different compset.
 
@@ -71,7 +71,7 @@ Run the same configuration as above, but with a different compset.
 > Where would I look up this difference between this compset and the previous one?
 >
 >
-> Which files in my two cases should I compare to see
+> Which files in my two cases should I compare to see how they differ
 >
 >
 {: .challenge}
@@ -83,7 +83,16 @@ Run the same configuration as above, but with a different compset.
 >
 {: .challenge}
 
+#### Look at your results
+
 When this run and the previous run are complete, compare teh leaf and stem area index (`TLAI`,`TSAI`), transpiration and canopy and ground evaporation (`FCTR`,`FCEV`,`FGEV`). 
+
+~~~
+$ ncdiff hist_exp1.nc hist_exp2.nc diff_exp1_exp2.nc
+$ module load ncview
+$ ncview diff_exp1_exp2.nc
+~~~
+{: .language-bash}
 
 > ## Interpreting output
 >
@@ -92,7 +101,7 @@ When this run and the previous run are complete, compare teh leaf and stem area 
 >
 {: .challenge}
 
-## Understand Inputs for CLM
+## Experiment 3:  Understand Inputs for CLM
 
 Look at the `lnd_in` namelist for the first experiment. 
 
