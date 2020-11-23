@@ -56,6 +56,9 @@ Reduce the wallclock time.
 >
 > When the run is complete, where will the land history data be located?
 >
+> There will be 6 timesteps in the history file.  The first time
+> step is an initialization value.  The second is the first daily average.
+>
 >
 {: .challenge}
 
@@ -85,7 +88,7 @@ Run the same configuration as above, but with a different compset.
 
 #### Look at your results
 
-When this run and the previous run are complete, compare teh leaf and stem area index (`TLAI`,`TSAI`), transpiration and canopy and ground evaporation (`FCTR`,`FCEV`,`FGEV`). 
+When this run and the previous run are complete, compare the leaf and stem area index (`TLAI`,`TSAI`), transpiration and canopy and ground evaporation (`FCTR`,`FCEV`,`FGEV`). Note that there will be additional biogeochemistry variables in the second experiment. Use ncview to compare side by side on your screen.
 
 > ## Interpreting output
 >
@@ -167,17 +170,19 @@ Create a new experiment exactly like the first one, but change it to use your ne
 Compare the history output against that generated in the first experiment.  Here's a nice tool for making that comparison:
 
 ~~~
-ncdiff hist_exp1 hist_exp2.nc hist_diff.nc
+ncdiff hist_exp2 hist_exp1.nc hist_diff.nc
+module load ncview
+ncview hist_diff.nc
 ~~~
 {: .language-bash}
 
-Now you can ncview the `hist_diff.nc` file to see the differences.
-
 > ## How did this change impact your experiment? 
 >
-> Some variables to compare: `FSRVD`,`FSRVI`,`FSR`,`FSA`,`FSH`,`FCSTR`,`TV`,`TSA`).  Use `ncdump` to get their full name and units.
+> Some variables to compare: `FSRVD`,`FSRVI`,`FSR`,`FSA`,`FSH`,`FCSTR`,`TV`,`TSA`).
 > 
-> Was the impact what you expected?
+> Was the impact what you expected? 
+> 
+> Why or why not?
 >
 {: .challenge}
 
