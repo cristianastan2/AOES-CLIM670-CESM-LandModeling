@@ -72,7 +72,6 @@ Run the same configuration as above, but with a different compset.
 >
 >
 > Which files in my two cases should I compare to see
-> the differences between the two compsets?
 >
 >
 {: .challenge}
@@ -95,20 +94,9 @@ When this run and the previous run are complete, compare teh leaf and stem area 
 
 ## Understand Inputs for CLM
 
-Create a copy of the first experiment.  
-
-> ## Cloning 
->
-> What command creates an exact replica of another experiment?
->
-> Where is that command run from?
->
-{: .challenge}
-
-
 Look at the `lnd_in` namelist for the first experiment. 
 
-## Resolved Namelists
+> ## Resolved Namelists
 >
 > Where is the `lnd_in` namelist file for the first experiment located?
 > 
@@ -117,24 +105,23 @@ Look at the `lnd_in` namelist for the first experiment.
 
 Find the parameter file specified by the `paramfile` namelist item.
 
-## What is the name of the file?
->
+> ## What is the name of the file?
 >
 >
 {: .challenge}
 
+This file defines specific information about each of the plant function types in CLM.  This is an important input file for the land model.
+
 We will look at this file in Jupyter, specifically the variable `rholvis`.  This is the visible leaf reflectance for each plant functional type (pft).  Its the amount of visible radiation reflected by the different types of plants.  
 
-## How do I launch Jupyter from Cheyenne?
->
->
+> ## How do I launch Jupyter (or Python in general) from Cheyenne?
 >
 > 
 {: .challenge}
 
 This is an input file for the land model. We will change the values in this file and see what that does to the model simulation.
 
-## Looking at data in .nc files
+> ## Looking at data in .nc files
 >
 > What is plant functional type #4?
 >
@@ -142,8 +129,7 @@ This is an input file for the land model. We will change the values in this file
 >
 {: .challenge}
 
-
-## Createing new input files
+## Creating new input files
 >
 > Create a new file which changes the visible leaf reflectance of plant functional type #4 (tropical broadleaf evergreen tree) to 0.4.  
 >
@@ -153,11 +139,26 @@ This is an input file for the land model. We will change the values in this file
 
 Create a new experiment exactly like the first one, but change it to use your new file.
 
-## Changing Land Input files
+> ## Cloning
 >
-> Where would you change this?
+> What command creates an exact replica of another experiment?
+>
+> Where is that command run from?
 >
 {: .challenge}
+
+## Changing Land Input files
+>
+> Where would you change this so your new case will 
+> find the new input file?
+>
+{: .challenge}
+
+#### While the model is building...
+
+* What do you think this change did?
+
+* What do you expect the the impact to be?
 
 Compare the history output against that generated in the first experiment.  Here's a nice tool for making that comparison:
 
@@ -168,6 +169,11 @@ ncdiff hist_exp1 hist_exp2.nc hist_diff.nc
 
 Now you can ncview the `hist_diff.nc` file to see the differences.
 
-How did this change impact your experiment? 
-Some variables to compare: `FSRVD`,`FSRVI`,`FSR`,`FSA`,`FSH`,`FCSTR`,`TV`,`TSA`).  Use `ncdump` to get their full name and units.
+> ## How did this change impact your experiment? 
+>
+> Some variables to compare: `FSRVD`,`FSRVI`,`FSR`,`FSA`,`FSH`,`FCSTR`,`TV`,`TSA`).  Use `ncdump` to get their full name and units.
+> 
+> Was the impact what you expected?
+>
+{: .challenge}
 
