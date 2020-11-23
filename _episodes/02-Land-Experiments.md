@@ -129,7 +129,7 @@ This is an input file for the land model. We will change the values in this file
 >
 {: .challenge}
 
-## Creating new input files
+> ## Creating new input files
 >
 > Create a new file which changes the visible leaf reflectance of plant functional type #4 (tropical broadleaf evergreen tree) to 0.4.  
 >
@@ -147,7 +147,7 @@ Create a new experiment exactly like the first one, but change it to use your ne
 >
 {: .challenge}
 
-## Changing Land Input files
+> ## Changing Land Input files
 >
 > Where would you change this so your new case will 
 > find the new input file?
@@ -159,6 +159,8 @@ Create a new experiment exactly like the first one, but change it to use your ne
 * What do you think this change did?
 
 * What do you expect the the impact to be?
+
+#### Look at the result
 
 Compare the history output against that generated in the first experiment.  Here's a nice tool for making that comparison:
 
