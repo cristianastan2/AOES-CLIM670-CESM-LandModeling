@@ -87,13 +87,6 @@ Run the same configuration as above, but with a different compset.
 
 When this run and the previous run are complete, compare teh leaf and stem area index (`TLAI`,`TSAI`), transpiration and canopy and ground evaporation (`FCTR`,`FCEV`,`FGEV`). 
 
-~~~
-$ ncdiff hist_exp1.nc hist_exp2.nc diff_exp1_exp2.nc
-$ module load ncview
-$ ncview diff_exp1_exp2.nc
-~~~
-{: .language-bash}
-
 > ## Interpreting output
 >
 > What is the reason for the differences based on what you know about the different compsets?
