@@ -17,7 +17,7 @@ Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal reso
 
 `resolution:` f09_g17_gl4
 
-> ### Compset information
+> ## Compset information
 >
 > How can I find out what this compset means?
 >
