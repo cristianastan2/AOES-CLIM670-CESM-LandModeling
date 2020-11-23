@@ -27,13 +27,13 @@ Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal reso
 {: .challenge}
 
 
-Namelist changes:
+#### Namelist changes:
 
 * daily averages (hist_nhtfrq)
 
 * make history files contain 5-days + initialization day (hist_mfilt)
 
-## Namelists
+> ## Namelists
 > 
 > What file do I make namelist change in for the land?
 >
@@ -43,7 +43,7 @@ Namelist changes:
 >
 {: .challenge}
 
-Configuration changes:
+#### Configuration changes:
 
 Reduce the wallclock time.
 
@@ -52,7 +52,7 @@ Reduce the wallclock time.
 ~~~
 {: .language-bash}
 
-## History Files
+> ## History Files
 >
 > When the run is complete, where will the land history data be located?
 >
@@ -66,7 +66,7 @@ Run the same configuration as above, but with a different compset.
 
 `compset`: IHistClm50BgcCrop
 
-## Compsets
+> ## Compsets
 >
 > Where would I look up this difference between this compset and the previous one?
 >
@@ -77,7 +77,7 @@ Run the same configuration as above, but with a different compset.
 >
 {: .challenge}
 
-## Finding create_newcase setup
+> ## Finding create_newcase setup
 >
 >  What file tells me the create_newcase command I ran for the first exeriment?
 >
@@ -86,7 +86,7 @@ Run the same configuration as above, but with a different compset.
 
 When this run and the previous run are complete, compare teh leaf and stem area index (`TLAI`,`TSAI`), transpiration and canopy and ground evaporation (`FCTR`,`FCEV`,`FGEV`). 
 
-## Interpreting output
+> ## Interpreting output
 >
 > What is the reason for the differences based on what you know about the different compsets?
 >
@@ -94,6 +94,17 @@ When this run and the previous run are complete, compare teh leaf and stem area 
 {: .challenge}
 
 ## Understand Inputs for CLM
+
+Create a copy of the first experiment.  
+
+> ## Cloning 
+>
+> What command creates an exact replica of another experiment?
+>
+> Where is that command run from?
+>
+{: .challenge}
+
 
 Look at the `lnd_in` namelist for the first experiment. 
 
