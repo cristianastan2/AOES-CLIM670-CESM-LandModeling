@@ -21,7 +21,7 @@ Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal reso
 >
 > How can I find out what this compset means?
 >
-> https://www.cesm.ucar.edu/models/cesm2/config/2.1.1/compsets.html
+> https://www.cesm.ucar.edu/models/cesm2/config/2.1.3/compsets.html
 >
 >
 {: .challenge}
