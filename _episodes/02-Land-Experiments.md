@@ -21,7 +21,7 @@ Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal reso
 >
 > How can I find out what this compset means?
 >
-> https://www.cesm.ucar.edu/models/cesm2/config/2.1.3/compsets.html
+> https://docs.cesm.ucar.edu/models/cesm2/config/2.1.5/compsets.html
 >
 >
 {: .challenge}
@@ -119,7 +119,7 @@ This file defines specific information about each of the plant function types in
 
 We will look at this file in Jupyter, specifically the variable `rholvis`.  This is the visible leaf reflectance for each plant functional type (pft).  Its the amount of visible radiation reflected by the different types of plants.  
 
-> ## How do I launch Jupyter (or Python in general) from Cheyenne?
+> ## How do I launch Jupyter (or Python in general) from Casper?
 >
 > 
 {: .challenge}
