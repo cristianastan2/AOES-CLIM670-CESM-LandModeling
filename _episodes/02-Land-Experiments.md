@@ -21,7 +21,7 @@ Run the land model (CLM5) with satellite phenology (SP) at 1 deg horizontal reso
 >
 > How can I find out what this compset means?
 >
-> https://docs.cesm.ucar.edu/models/cesm2/config/2.1.5/compsets.html
+> [https://docs.cesm.ucar.edu/models/cesm2/config/2.1.5/compsets.html](https://docs.cesm.ucar.edu/models/cesm2/config/2.1.5/compsets.html)
 >
 >
 {: .challenge}
@@ -170,7 +170,7 @@ Create a new experiment exactly like the first one, but change it to use your ne
 Compare the history output against that generated in the first experiment.  Here's a nice tool for making that comparison:
 
 ~~~
-ncdiff hist_exp2 hist_exp1.nc hist_diff.nc
+ncdiff hist_exp2.nc hist_exp1.nc hist_diff.nc
 module load ncview
 ncview hist_diff.nc
 ~~~
