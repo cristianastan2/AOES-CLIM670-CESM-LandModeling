@@ -119,7 +119,7 @@ This file defines specific information about each of the plant function types in
 
 We will look at this file in Jupyter, specifically the variable `rholvis`.  This is the visible leaf reflectance for each plant functional type (pft).  Its the amount of visible radiation reflected by the different types of plants.  
 
-> ## How do I launch Jupyter (or Python in general) from Casper?
+> ## How do I launch Jupyter Notebook from Casper?
 >
 > 
 {: .challenge}
