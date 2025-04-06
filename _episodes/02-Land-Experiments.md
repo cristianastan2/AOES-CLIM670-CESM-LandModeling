@@ -99,6 +99,16 @@ When this run and the previous run are complete, compare the leaf and stem area 
 
 ## Experiment 3:  Understand Inputs for CLM
 
+Create a new experiment exactly like the first one, but change it to use your new file.
+
+> ## Cloning
+>
+> What command creates an exact replica of another experiment?
+>
+> Where is that command run from?
+>
+{: .challenge}
+
 Look at the `lnd_in` namelist for the first experiment. 
 
 > ## Resolved Namelists
@@ -139,16 +149,6 @@ This is an input file for the land model. We will change the values in this file
 > Create a new file which changes the visible leaf reflectance of plant functional type #4 (tropical broadleaf evergreen tree) to 0.4.  
 >
 > Write the data to a netcdf file.
->
-{: .challenge}
-
-Create a new experiment exactly like the first one, but change it to use your new file.
-
-> ## Cloning
->
-> What command creates an exact replica of another experiment?
->
-> Where is that command run from?
 >
 {: .challenge}
 
